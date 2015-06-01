@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D0A6DFD41B1BC3300037E34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFD31B1BC3300037E34C /* AppDelegate.swift */; };
-		D0A6DFD61B1BC3310037E34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFD51B1BC3310037E34C /* ViewController.swift */; };
 		D0A6DFD91B1BC3310037E34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6DFD71B1BC3310037E34C /* Main.storyboard */; };
 		D0A6DFDB1B1BC3310037E34C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A6DFDA1B1BC3310037E34C /* Images.xcassets */; };
 		D0A6DFDE1B1BC3310037E34C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A6DFDC1B1BC3310037E34C /* LaunchScreen.xib */; };
 		D0A6DFEA1B1BC3310037E34C /* WineAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFE91B1BC3310037E34C /* WineAppTests.swift */; };
+		D0A6DFF51B1BCA120037E34C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */; };
+		D0A6DFF71B1BCB620037E34C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		D0A6DFCE1B1BC3300037E34C /* WineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A6DFD21B1BC3300037E34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A6DFD31B1BC3300037E34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0A6DFD51B1BC3310037E34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0A6DFD81B1BC3310037E34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A6DFDA1B1BC3310037E34C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0A6DFDD1B1BC3310037E34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0A6DFE31B1BC3310037E34C /* WineAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WineAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A6DFE81B1BC3310037E34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A6DFE91B1BC3310037E34C /* WineAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineAppTests.swift; sourceTree = "<group>"; };
+		D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				D0A6DFD31B1BC3300037E34C /* AppDelegate.swift */,
-				D0A6DFD51B1BC3310037E34C /* ViewController.swift */,
-				D0A6DFD71B1BC3310037E34C /* Main.storyboard */,
 				D0A6DFDA1B1BC3310037E34C /* Images.xcassets */,
 				D0A6DFDC1B1BC3310037E34C /* LaunchScreen.xib */,
+				D0A6DFD71B1BC3310037E34C /* Main.storyboard */,
+				D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */,
+				D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */,
 				D0A6DFD11B1BC3300037E34C /* Supporting Files */,
 			);
 			path = WineApp;
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A6DFD61B1BC3310037E34C /* ViewController.swift in Sources */,
 				D0A6DFD41B1BC3300037E34C /* AppDelegate.swift in Sources */,
+				D0A6DFF71B1BCB620037E34C /* OnboardingViewController.swift in Sources */,
+				D0A6DFF51B1BCA120037E34C /* PageContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
