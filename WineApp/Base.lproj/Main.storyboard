@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UfO-q2-F0m">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -76,6 +78,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BI0-aZ-RWT" kind="presentation" id="9Xn-kJ-C8T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +152,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7aJ-tf-zy9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenGateBridge-001" translatesAutoresizingMaskIntoConstraints="NO" id="7aJ-tf-zy9">
                                 <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                             </imageView>
                         </subviews>
@@ -177,5 +182,87 @@
             </objects>
             <point key="canvasLocation" x="1836" y="434"/>
         </scene>
+        <!--Search Criteria View Controller-->
+        <scene sceneID="0Ph-Df-OqA">
+            <objects>
+                <viewController id="BI0-aZ-RWT" customClass="SearchCriteriaViewController" customModule="WineApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PLC-fg-cDO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bal-WZ-0aH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xVK-zo-MPn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenGateBridge-001" translatesAutoresizingMaskIntoConstraints="NO" id="R0U-uC-gTc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="198"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-BT-AhK">
+                                <rect key="frame" x="554" y="224" width="30" height="30"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partySizeIncrementButton:" destination="BI0-aZ-RWT" eventType="touchUpInside" id="UiT-8l-PBW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMO-Kf-7gm">
+                                <rect key="frame" x="16" y="224" width="30" height="30"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partySizeDecrementButton:" destination="BI0-aZ-RWT" eventType="touchUpInside" id="tHe-av-Dtu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="people" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV7-kV-VvV">
+                                <rect key="frame" x="274" y="245" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eu4-1d-xtj"/>
+                                    <constraint firstAttribute="width" constant="53" id="tbo-KV-kMk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB5-mT-QQb">
+                                <rect key="frame" x="279" y="216" width="42" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="KkL-kp-ys3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bal-WZ-0aH" firstAttribute="top" secondItem="hV7-kV-VvV" secondAttribute="bottom" constant="334" id="3cm-6F-esO"/>
+                            <constraint firstItem="eMO-Kf-7gm" firstAttribute="leading" secondItem="xVK-zo-MPn" secondAttribute="leadingMargin" id="9wx-Kq-Zvz"/>
+                            <constraint firstItem="R0U-uC-gTc" firstAttribute="leading" secondItem="xVK-zo-MPn" secondAttribute="leading" id="AmZ-MO-A6L"/>
+                            <constraint firstItem="R0U-uC-gTc" firstAttribute="height" secondItem="xVK-zo-MPn" secondAttribute="height" multiplier="0.33" id="CdI-cE-Cxi"/>
+                            <constraint firstItem="R0U-uC-gTc" firstAttribute="top" secondItem="xVK-zo-MPn" secondAttribute="top" id="FKb-aR-YqV"/>
+                            <constraint firstItem="8hY-BT-AhK" firstAttribute="baseline" secondItem="eMO-Kf-7gm" secondAttribute="baseline" id="N0i-kz-Xgb"/>
+                            <constraint firstItem="xB5-mT-QQb" firstAttribute="centerX" secondItem="R0U-uC-gTc" secondAttribute="centerX" id="Ncf-od-8Ii"/>
+                            <constraint firstItem="eMO-Kf-7gm" firstAttribute="baseline" secondItem="xB5-mT-QQb" secondAttribute="firstBaseline" id="Q0f-xk-PBq"/>
+                            <constraint firstItem="8hY-BT-AhK" firstAttribute="trailing" secondItem="xVK-zo-MPn" secondAttribute="trailingMargin" id="fCV-g7-Hs6"/>
+                            <constraint firstAttribute="trailing" secondItem="R0U-uC-gTc" secondAttribute="trailing" id="mUf-mO-Qft"/>
+                            <constraint firstItem="hV7-kV-VvV" firstAttribute="top" secondItem="xB5-mT-QQb" secondAttribute="bottom" id="yjM-OL-s96"/>
+                            <constraint firstItem="xB5-mT-QQb" firstAttribute="centerX" secondItem="hV7-kV-VvV" secondAttribute="centerX" id="zUG-VO-t0e"/>
+                            <constraint firstItem="xB5-mT-QQb" firstAttribute="top" secondItem="R0U-uC-gTc" secondAttribute="bottom" constant="18" id="zvO-ip-39t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="partySizeLabel" destination="xB5-mT-QQb" id="jfh-mS-TbL"/>
+                        <outlet property="partySizePeopleLabel" destination="hV7-kV-VvV" id="q79-s2-D03"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guJ-oL-92N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429" y="1156"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="GoldenGateBridge-001" width="1632" height="1224"/>
+    </resources>
 </document>

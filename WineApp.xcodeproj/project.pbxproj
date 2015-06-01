@@ -14,6 +14,7 @@
 		D0A6DFEA1B1BC3310037E34C /* WineAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFE91B1BC3310037E34C /* WineAppTests.swift */; };
 		D0A6DFF51B1BCA120037E34C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */; };
 		D0A6DFF71B1BCB620037E34C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */; };
+		D0A6DFFB1B1BE0D80037E34C /* SearchCriteriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6DFFA1B1BE0D80037E34C /* SearchCriteriaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D0A6DFE91B1BC3310037E34C /* WineAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineAppTests.swift; sourceTree = "<group>"; };
 		D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D0A6DFFA1B1BE0D80037E34C /* SearchCriteriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCriteriaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D0A6DFD71B1BC3310037E34C /* Main.storyboard */,
 				D0A6DFF61B1BCB620037E34C /* OnboardingViewController.swift */,
 				D0A6DFF41B1BCA120037E34C /* PageContentViewController.swift */,
+				D0A6DFFA1B1BE0D80037E34C /* SearchCriteriaViewController.swift */,
 				D0A6DFD11B1BC3300037E34C /* Supporting Files */,
 			);
 			path = WineApp;
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A6DFD41B1BC3300037E34C /* AppDelegate.swift in Sources */,
+				D0A6DFFB1B1BE0D80037E34C /* SearchCriteriaViewController.swift in Sources */,
 				D0A6DFF71B1BCB620037E34C /* OnboardingViewController.swift in Sources */,
 				D0A6DFF51B1BCA120037E34C /* PageContentViewController.swift in Sources */,
 			);
